@@ -1,4 +1,4 @@
-package com.example.techtron.developer_recyclerview;
+package com.example.techtron.recyclerview;
 
 import org.junit.Test;
 
