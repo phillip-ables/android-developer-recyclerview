@@ -49,11 +49,18 @@ public class ContactsAdapter extends
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        Contact contact = mContacts.get(position);
 
+        TextView textView = holder.nameTextView;
+        textView.setText(contact.getName());
+
+        Button button = holder.messageButton;
+        button.setText(contact.getOnline() ? "Message" : "Offline");
+        button.setEnabled(contact.getOnline());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mContacts.size();
     }
 }
