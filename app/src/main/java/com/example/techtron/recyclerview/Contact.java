@@ -22,7 +22,7 @@ public class Contact {
     private static int lastContactId = 0;
 
     public ArrayList<Contact> createContactList(int numContacts) {
-        ArrayList<Contact> contacts = new ArrayList<Contact>;
+        ArrayList<Contact> contacts = new ArrayList<Contact>();
 
         for(int i = 0; i < numContacts; i++){
             contacts.add(new Contact("Person "+lastContactId, i < numContacts/2));
