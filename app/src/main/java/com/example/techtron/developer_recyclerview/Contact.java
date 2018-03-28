@@ -12,12 +12,22 @@ public class Contact {
         mOnline = online;
     }
 
-    public String getName() {
+    public String getName(){
         return mName;
     }
 
-    public boolean getOnline() {
+    public boolean getOnline(){
         return mOnline;
     }
 
+    public static int lastContactId = 0;
+
+    public static ArrayList<Contact> createContactList(int numContacts) {
+        ArrayList<Contact> contacts = new ArrayList<Contact>();
+
+        for (int i = 0; i < numContacts; i++){
+            contacts.add(new Contact("Person "+i, i< numContacts/2));
+        }
+        return contacts;
+    }
 }
