@@ -40,6 +40,11 @@ public class ContactsAdapter extends
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
+
+        View contactView = inflater.inflate(R.layout.item_contact, parent, false);
+
+        ViewHolder viewHolder = new ViewHolder(contactView);
+        return viewHolder;
     }
 
     @Override
