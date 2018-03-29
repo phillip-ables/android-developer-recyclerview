@@ -6,6 +6,7 @@ public class ContactAdapter
     extends RecyclerView.Adapter(ContactAdapter.ViewHolder){
 
     public ViewHolder extends RecyclerView.ViewHolder{
-
+            public TextView contactName;
+            public Button messageButton;
         }
 }
