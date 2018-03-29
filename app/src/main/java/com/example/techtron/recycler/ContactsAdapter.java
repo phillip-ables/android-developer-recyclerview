@@ -49,6 +49,9 @@ public class ContactsAdapter
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
+        View contactView = inflater.inflate(R.layout.item_contact, parent, false);
+        
+
         return null;
     }
 
