@@ -16,4 +16,16 @@ public class ContactAdapter
             messageButton = (Button) itemView.findViewById(R.id.btn_message);
         }
     }
+
+    private Context sContext;
+    private ArrayList<Contact> mContacts;
+
+    public ContactAdapter(Context context, ArrayList<Contact> contacts){
+        mContext = context;
+        mContacts = contacts;
+    };
+
+    private Context getContext(){
+        return mContext;
+    }
 }
