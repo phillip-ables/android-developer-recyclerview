@@ -50,9 +50,8 @@ public class ContactsAdapter
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View contactView = inflater.inflate(R.layout.item_contact, parent, false);
-        
-
-        return null;
+        ViewHolder viewHolder = new ViewHolder(contactView);
+        return viewHolder;
     }
 
     @Override
