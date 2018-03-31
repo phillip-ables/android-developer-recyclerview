@@ -22,7 +22,7 @@ public class Contacts {
         return mOnline;
     }
 
-    public ArrayList<Contacts> createContactsList(int numContacts){
+    static ArrayList<Contacts> createContactsList(int numContacts){
         ArrayList<Contacts> contacts  = new ArrayList<Contacts>();
 
         for (int i = 1; i <numContacts; i++){

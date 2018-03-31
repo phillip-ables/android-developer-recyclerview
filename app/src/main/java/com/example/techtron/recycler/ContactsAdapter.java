@@ -68,6 +68,6 @@ public class ContactsAdapter
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mContacts.size();
     }
 }
