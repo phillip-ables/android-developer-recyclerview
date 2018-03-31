@@ -56,7 +56,14 @@ public class ContactsAdapter
 
     @Override
     public void onBindViewHolder(ContactsAdapter.ViewHolder holder, int position) {
-
+        //adapter needs a position to work with
+        Contacts contact = mContacts.get(position);
+        //needs variables to work with
+        TextView textView = holder.uName;
+        textView.setText(contact.getName());
+        Button button = holder.message;
+        button.setText(contact.isOnline() ? "Message" : "Offline");
+        button.setEnabled(contact.isOnline());
     }
 
     @Override
